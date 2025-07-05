@@ -39,3 +39,5 @@ Got text from MiniCPM: What's your favorite food?
 Time to first byte: 0.7349286670000007
 Realtime Factor: 0.8723796078031713
 ```
+
+compiling the generate and prefil methods barely gives any progress as long is there isnt a sttable way to sstore/cache torch compile graphs there  there is not use since the performance is variable all the time
