@@ -1,5 +1,11 @@
 # Installation
 
+res:
+```
+Time to first byte: 0.7349286670000007
+Realtime Factor: 0.8723796078031713
+```
+
 1. Install dependencies:
 
 ```bash
