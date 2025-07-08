@@ -16,7 +16,6 @@ from modeling_minicpmo import gen_logits, VoiceChecker, NumberToTextConverter, s
 class MiniCPMOPatched:
     """
     A patched version of MiniCPMO with optimizations for inference.
-    This class applies Zhou Fangru's algorithmic optimizations, uses torch.autocast for bfloat16,
     and sets a smaller chunk size for faster inference.
     """
 
@@ -24,7 +23,6 @@ class MiniCPMOPatched:
         """Apply optimizations: Zhou Fangru + autocast + smaller chunks"""
         print(f"🔧 Applying optimizations (mode='{mode}')")
         
-        print("✅ Zhou Fangru's algorithmic optimizations: Applied")
         print("✅ torch.autocast(bfloat16): Applied")  
         print("✅ Smaller chunk_size (8): Applied")
         print("⚠️ Skipping torch.compile to avoid breaking inference")
