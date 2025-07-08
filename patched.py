@@ -19,13 +19,12 @@ class MiniCPMOPatched:
     and sets a smaller chunk size for faster inference.
     """
 
-    def compile_model(self, mode="default", backend=None):
-        """Apply optimizations: Zhou Fangru + autocast + smaller chunks"""
-        print(f"🔧 Applying optimizations (mode='{mode}')")
+    # def compile_model(self, mode="default", backend=None):
+    #     print(f"🔧 Applying optimizations (mode='{mode}')")
         
-        print("✅ torch.autocast(bfloat16): Applied")  
-        print("✅ Smaller chunk_size (8): Applied")
-        print("⚠️ Skipping torch.compile to avoid breaking inference")
+    #     print("✅ torch.autocast(bfloat16): Applied")  
+    #     print("✅ Smaller chunk_size (8): Applied")
+    #     print("⚠️ Skipping torch.compile to avoid breaking inference")
 
 
     def _generate_mel_spec_audio_streaming(
